@@ -436,23 +436,40 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
                 <h2>Get in touch</h2>
             </header>
             <div class="content">
-                <p><strong>VR2020 DDs</strong> are open 24x7. We are love to hear from you.</p>
+				<p><strong>VR2020 DDs</strong> are open 24x7. We are love to hear from you.</p>
+
                 <form>
                     <div class="fields">
-                        <div class="field half">
-                            <input type="text" name="name" id="name" placeholder="Name" />
-                        </div>
-                        <div class="field half">
-                            <input type="email" name="email" id="email" placeholder="Email" />
-                        </div>
                         <div class="field">
-                            <textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+                            <input type="text"  name="name" id="customerName" placeholder="Name" />
+                        </div>
+                     
+                        <div class="field">
+                            <textarea name="message" id="customerMessage" placeholder="Message" rows="7"></textarea>
                         </div>
                     </div>
                     <ul class="actions">
-                        <li><input type="submit" value="Send Message" class="button primary" /></li>
+                        <li><input id="mailSent" onclick="sendMessage()" type="button" value="Send Message" class="button primary" /></li>
                     </ul>
-                </form>
+				</form>
+				<script>
+					function sendMessage(){
+					let name =	document.getElementById('customerName').value;
+					let customerMessage =	document.getElementById('customerMessage').value;
+					let url = "mailto:vr2020dental@gmail.com?";
+					if(name){
+					url += 	'subject='+ name +' enquiry !';
+					}
+					if(name){
+					url += 	'&body='+ customerMessage +'!';
+					}
+						window.open(url);
+					}
+
+					document.getElementById('customerName').value = '';
+					document.getElementById('customerMessage').value = '';
+
+				</script>
             </div>
             <footer>
                 <ul class="items">
