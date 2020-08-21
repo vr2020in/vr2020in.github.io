@@ -1,0 +1,22 @@
+<div id="gallery">
+    <a  href="images/4.jpg"><img title="This right here is a caption."  src="images/4.jpg" /></a>
+    <a href="images/4.jpg"><img title="This right here is a caption."  src="images/4.jpg" /></a>
+	<a href="images/4.jpg"><img title="This right here is a caption."  src="images/4.jpg" /></a>
+
+	
+</div>
+
+<button onclick="anil()">  test </button>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.poptrox.min.js"></script>
+<script>
+    function anil (){
+var foo = $('#gallery');
+foo.poptrox({
+    caption:	null,
+    popupNavPreviousSelector:	'.nav-previous',// (Advanced) Popup Nav Previous selector
+	popupNavNextSelector:		'.nav-next'
+});
+    }
+</script>

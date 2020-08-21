@@ -43,15 +43,17 @@
             <div class="content">
                 <p>VR 2020 founded in 2015 by Mr. Ravi Kumar, B.Tech, CDT, entrepreneur and philanthropist. As the longtime superior in digital restorative technology VR2020 is making it easier than before for dentists to envision these and other benefits
                     of an all-digital Dentistry workflow.</p>
+				<span class="image main"><img src="images/dentist.JPG" alt="" /></span>
+				<a href="livecases.html" class="button primary large">Check Live cases</a>
 
-                <span class="image main"><img src="images/dentist.JPG" alt="" /></span>
+				
             </div>
         </section>
 
         <!-- Section -->
         <section>
             <header>
-                <h2>Servicves</h2>
+                <h2>Services</h2>
             </header>
             <div class="content">
                 <p><strong>Precision & Quality </strong>is our Priority.</p>
@@ -460,14 +462,15 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 					if(name){
 					url += 	'subject='+ name +' enquiry !';
 					}
-					if(name){
+					if(customerMessage){
 					url += 	'&body='+ customerMessage +'!';
 					}
+					document.getElementById('customerName').value = '';
+					document.getElementById('customerMessage').value = '';
 						window.open(url);
 					}
 
-					document.getElementById('customerName').value = '';
-					document.getElementById('customerMessage').value = '';
+					
 
 				</script>
             </div>
@@ -500,8 +503,9 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 
     </div>
 
-    <!-- Scripts -->
+	<!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.poptrox.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
