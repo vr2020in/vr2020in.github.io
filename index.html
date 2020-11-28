@@ -46,6 +46,7 @@
                 </ul>
             </header>
             <div class="content">
+				<a href="https://drive.vr2020dentlab.com/login">Login/Sign up</a>
                 <span class="image fill" data-position="center"><img src="images/m1.jpeg" alt="" /></span>
             </div>
         </section>
@@ -466,7 +467,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
                 <form>
                     <div class="fields">
                         <div class="field">
-                            <input type="text"  name="name" id="customerName" placeholder="Name" />
+                            <input type="email"  name="name" id="customerName" placeholder="email" />
                         </div>
                      
                         <div class="field">
@@ -474,23 +475,42 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
                         </div>
                     </div>
                     <ul class="actions">
-                        <li><input id="mailSent" onclick="sendMessage()" type="button" value="Send Query" class="button primary" /></li>
+						<li><input id="mailSent" onclick="sendMessage()" type="button" value="Send Query" class="button primary" /></li>
+						<li>
+							<a href="https://drive.vr2020dentlab.com/login">Dental Lab(Clinic) Login/Sign Up</a>
+
+						</li>
                     </ul>
 				</form>
 				<script>
 					function sendMessage(){
 					let name =	document.getElementById('customerName').value;
 					let customerMessage =	document.getElementById('customerMessage').value;
-					let url = "mailto:vr2020dental@gmail.com?";
-					if(name){
-					url += 	'subject='+ name +' enquiry !';
-					}
-					if(customerMessage){
-					url += 	'&body='+ customerMessage +'!';
-					}
+					//let url = "mailto:vr2020dental@gmail.com?";
+					// if(name){
+					// url += 	'subject='+ name +' enquiry !';
+					// }
+					// if(customerMessage){
+					// url += 	'&body='+ customerMessage +'!';
+					// }
 					document.getElementById('customerName').value = '';
 					document.getElementById('customerMessage').value = '';
-						window.open(url);
+						//window.open(url);
+					let data = JSON.stringify({"user_info":name?name:"","contant":customerMessage?customerMessage:""});
+
+					let xhr = new XMLHttpRequest();
+					//xhr.withCredentials = true;
+
+					xhr.addEventListener("readystatechange", function() {
+					if(this.readyState === 4) {
+						console.log(this.responseText);
+					}
+					});
+
+					xhr.open("POST", "https://api-filesystem.vr2020dentlab.com/api/users/need_support");
+					xhr.setRequestHeader("Content-Type", "application/json");
+
+					xhr.send(data);
 					}
 
 					
