@@ -85,6 +85,8 @@ nav {
    z-index: 99;
    position: fixed;
    width: 50vw;
+   font-family: Roboto;
+   font-weight: bold;
 
 }
 nav a {
@@ -92,6 +94,8 @@ nav a {
 	   text-decoration: none;
 	   border-bottom: 0;
 	   padding: 0 10px;
+   text-shadow: 0 1px 1px #000000;
+
 	  }
 	  .logo {
    margin-top:20px ;
@@ -209,7 +213,7 @@ nav a {
 
 	body, input, select, textarea {
 		color: #000000;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Roboto", Helvetica, sans-serif;
 		font-size: 1rem;
 		font-weight: 300;
 		letter-spacing: 0.0375em;
@@ -233,7 +237,7 @@ nav a {
 
 	strong, b {
 		font-weight: 600;
-		color: #000000;
+		color: #0c6fb2;
 	}
 
 	em, i {
@@ -242,6 +246,7 @@ nav a {
 
 	p {
 		margin: 0 0 2rem 0;
+		font-weight: 400;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2627,6 +2632,7 @@ nav a {
 
 				ul.items > li > :last-child {
 					margin-bottom: 0;
+					font-weight: 400;
 				}
 
 				ul.items > li:last-child {
@@ -2798,12 +2804,13 @@ nav a {
 				-webkit-transition: background-color 0.25s ease-in-out;
 				-ms-transition: background-color 0.25s ease-in-out;
 				transition: background-color 0.25s ease-in-out;
-				width: 2.25rem;
+				/* width: 2.25rem; */
 				height: 2.25rem;
 				text-align: center;
 				line-height: 2.25rem;
 				border-radius: 2.25rem;
 				display: inline-block;
+				color: #000000;
 			}
 
 				ul.icons li .icon:before {
@@ -3221,6 +3228,7 @@ nav a {
 			padding: 0.5rem 0 0 4.5rem;
 			position: relative;
 			width: 50%;
+			font-weight: 500;
 		}
 
 			ul.feature-icons li:before {
@@ -3435,11 +3443,12 @@ nav a {
 			}
 
 		#wrapper .copyright {
-			color: rgba(0, 0, 0, 0.25);
+			color: #000000;
 			font-size: 1rem;
 			left: 50vw;
 			position: relative;
 			width: 50vw;
+			font-weight: 300;
 		}
 
 			#wrapper .copyright a {
