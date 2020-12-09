@@ -24,20 +24,7 @@
           opacity: 0;
         }
 	  }
-	  nav {
-		  background: #8a3a6f;
-		  padding: 0.4rem 5rem;
-		 margin: 0 -5rem;
-		 display: flex;
-		 justify-content: space-around;
-		 text-transform: uppercase;
-		 z-index: 99;
-	  }
-	  nav a {
-		 color: #ffffff;		
-			 text-decoration: none;
-			 border-bottom: 0;
-			}
+	
   
 	</style>
 </head>
@@ -46,11 +33,18 @@
 
     <!-- Wrapper -->
     <div id="wrapper">
-
+	
         <!-- Intro -->
         <section class="intro">
+				<nav>
+						<a href="#aboutus">About Us</a>
+						<a href="#services">Services</a>
+						<a href="#vision">Vision</a>
+						<a href="#contactus">Contact Us</a>
+						<a href="https://drive.vr2020dentlab.com/login" target="_blank">Create Account</a>
+					</nav>
             <header>
-				<img src="images2/logo.png">
+				<img src="images2/logo.png" class="logo">
 				<h1>Let's smile and rise Together</h1>
                 <p>Dental Designing Solution & Digital Laboratory <a target="_blank" href="https://twitter.com/vr2020d">@vr2020</a> </p>
                 <ul class="actions">
@@ -58,15 +52,9 @@
                 </ul>
             </header>
             <div class="content">
-				<nav>
-					<a href="#aboutus">About Us</a>
-					<a href="#services">Services</a>
-					<a href="#vision">Vision</a>
-					<a href="#contactus">Contact Us</a>
-					<a href="https://drive.vr2020dentlab.com/login" target="_blank">Create Account</a>
-				</nav>
+				
 				<!-- <a href="https://drive.vr2020dentlab.com/login">Login/Sign up</a> -->
-                <span class="image fill" data-position="center"><img src="images/m1.jpeg" alt="" /></span>
+                <span class="image fill" data-position="center"><img src="images/m3.jpg" alt="" /></span>
             </div>
         </section>
 
@@ -478,13 +466,18 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
         <!-- Section -->
         <section  id="contactus">
             <header>
-                <h2>Get in touch</h2>
+				<h2>Get in touch</h2>
+				<div>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d48386.401887313725!2d-73.9407136!3d40.7147117!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1402409149092" width="100%" height="300" frameborder="0" style="border:0"></iframe>			
+			</div>
             </header>
             <div class="content">
 				<p><strong>VR2020 DDs</strong> are open 24x7. We are love to hear from you.</p>
 
                 <form id="drive">
+					
                     <div class="fields">
+						
                         <div class="field">
                             <input type="email"  name="name" id="customerName" placeholder="email" />
                         </div>
@@ -495,10 +488,10 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
                     </div>
                     <ul class="actions">
 						<li><input style="background:#8a3a6f; color:#ffffff;" id="mailSent" onclick="sendMessage()" type="button" value="Send Query" class="button primary" /></li>
-						<li>
+						<!-- <li>
 							<a href="https://drive.vr2020dentlab.com/login">Dental Lab(Clinic) Login/Sign Up</a>
 
-						</li>
+						</li> -->
                     </ul>
 				</form>
 				<script>
@@ -539,11 +532,11 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
             <footer>
                 <ul class="items">
                     <li>
-                        <h3>Email</h3>
+                        <strong>EMAIL</strong>
                         <a href="mailto:vr2020dentlab.com">info@vr2020dentlab.com</a>
                     </li>
                     <li>
-                        <h3>Phone</h3>
+							<strong>PHONE</strong>
                         <a href="#">+91 9560232020</a>
                     </li>
 

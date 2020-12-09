@@ -7,6 +7,8 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* designed & developed by kool designer */
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -73,6 +75,29 @@ input, select, textarea {
 	appearance: none;
 }
 
+
+nav {
+	background: #8a3a6f;
+	padding: 0.4rem 5rem;
+   display: flex;
+   justify-content: space-around;
+   text-transform: uppercase;
+   z-index: 99;
+   position: fixed;
+   width: 50vw;
+
+}
+nav a {
+   color: #ffffff;		
+	   text-decoration: none;
+	   border-bottom: 0;
+	   padding: 0 10px;
+	  }
+	  .logo {
+   margin-top:20px ;
+
+	  }
+
 /* Basic */
 
 	@-ms-viewport {
@@ -124,6 +149,26 @@ input, select, textarea {
 	html {
 		font-size: 18pt;
 	}
+
+
+	@media only screen and (max-width: 768px) {
+		nav { 
+			width:100vw ;
+			padding: 0.4rem 1rem;
+		}
+		
+	  }
+
+	  @media only screen and (max-width: 480px) {
+		nav a {
+			color: #ffffff;
+			text-decoration: none;
+			border-bottom: 0;
+			padding: 0 7px;
+			font-size: 12px;
+			text-transform: capitalize;
+		}
+	  }
 
 		@media screen and (max-width: 1920px) {
 
@@ -2521,7 +2566,7 @@ input, select, textarea {
 				height: 100%;
 				left: 0;
 				position: absolute;
-				top: 0;
+				top:-15px;
 				width: 100%;
 			}
 
@@ -2573,7 +2618,7 @@ input, select, textarea {
 
 			ul.items > li {
 				padding-left: 0;
-				margin: 0 0 3rem 0;
+				margin: 0 0 0.5rem 0;
 			}
 
 				ul.items > li > h3 {
@@ -3258,7 +3303,7 @@ input, select, textarea {
 			}
 
 				#wrapper section > header h2 {
-					margin: 0 0 5rem 0;
+					margin: 0 0 2rem 0;
 					color: #0c6fb2;
 					
 				}
@@ -3415,7 +3460,7 @@ input, select, textarea {
 			}
 
 			#wrapper section > footer {
-				padding: 0 10rem;
+				padding: 0 5rem;
 			}
 
 		#wrapper > section > header:before {
