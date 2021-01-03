@@ -106,3 +106,13 @@
 .responsiveGallery-container section {
 	overflow: inherit;
 	}
+	@media  (max-width: 480px) {
+		.w-gallery {
+			margin-top:220px ;
+		}
+		
+		.responsivGallery-pic {
+			width: 320px;
+			height: 320px;
+		}
+	}
