@@ -623,7 +623,11 @@ section {
 .section-header p {
     text-align: center;
     /* padding-bottom: 30px; */
-    color: #333;
+    color: #000000;
+}
+#specialisation p, h5 {
+    color: #000000;
+
 }
 
 
@@ -878,8 +882,13 @@ section {
 
 #who-we-are h3 {
     color: #fff;
-    font-size: 28px;
+    font-size: 34px;
     font-weight: 700;
+}
+#who-we-are h2 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
 }
 
 #who-we-are p {
@@ -1564,9 +1573,22 @@ section {
     cursor: pointer;
 }
 
+#contact [type="button"]:hover {
+    background: #6d2856;
+}
+#contact [type="button"] {
+    background: #8a3a6f;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
 #contact .php-email-form button[type="submit"]:hover {
     background: #6d2856;
 }
+
 
 @-webkit-keyframes animate-loading {
     0% {
