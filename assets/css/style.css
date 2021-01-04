@@ -3,8 +3,8 @@
 body {
     background: #fff;
     color: #666666;
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
+    font-family:"Roboto", 'Open Sans', sans-serif;
+    font-size: 17px;
 }
 
 a {
@@ -215,6 +215,7 @@ h6 {
     position: relative;
     white-space: nowrap;
     padding: 10px 0 10px 28px;
+    cursor: pointer;
 }
 
 .nav-menu a {
@@ -222,8 +223,8 @@ h6 {
     position: relative;
     color: #666666;
     transition: 0.3s;
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -736,6 +737,7 @@ h6 {
     background-size: cover;
     padding: 60px 0 40px 0;
     position: relative;
+    margin-bottom: 30px;
 }
 
 #about::before {
@@ -829,7 +831,7 @@ h6 {
 --------------------------------*/
 
 #services {
-    background: #fff;
+    /* background: #fff; */
     background-size: cover;
     padding: 60px 0 40px 0;
 }
