@@ -115,10 +115,14 @@
 			width: 320px;
 			height: 320px;
 		}
+		#intro h2 {
+			margin-left: 0;
+		}
 	}
 	@media (max-width:768px){
 		.responsivGallery-pic {
 			width: 320px;
 			height: 320px;
 		}
+		
 	}
