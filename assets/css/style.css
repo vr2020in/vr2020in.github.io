@@ -889,6 +889,10 @@ h6 {
     font-size: 34px;
     font-weight: 700;
 }
+#who-we-are .vrtext {
+font-size: 85px;
+color: #ffc107;
+}
 #who-we-are h2 {
     color: #fff;
     font-size: 46px;
@@ -1780,6 +1784,9 @@ h6 {
     .nav-pills a {
         padding: 10px 8px;
         font-size: 14px;
+    }
+    #who-we-are .vrtext {
+        font-size: 55px;
     }
    
 }
