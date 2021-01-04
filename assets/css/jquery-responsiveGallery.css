@@ -24,7 +24,6 @@
 
 .responsiveGallery-wrapper{
 	position: relative;
-
 	width:100%;
 	margin: 0 auto;
 
@@ -64,7 +63,7 @@
 }
 @media (max-width: 560px){
 	.responsiveGallery-wrapper{
-		width: 60%;
+		width: 80%;
 	}
 	.responsiveGallery-item{
 		width: 100%; /*最终显示1个，但上条样式决定其宽度为窗口宽度的60%*/
@@ -76,6 +75,7 @@
 		width: 8%;
 	}
 }
+
 .responsivGallery-link{
 	display: block;
 	width: 100%;
@@ -111,6 +111,12 @@
 			margin-top:220px ;
 		}
 		
+		.responsivGallery-pic {
+			width: 320px;
+			height: 320px;
+		}
+	}
+	@media (max-width:768px){
 		.responsivGallery-pic {
 			width: 320px;
 			height: 320px;
