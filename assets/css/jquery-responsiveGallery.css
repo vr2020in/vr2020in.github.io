@@ -24,7 +24,7 @@
 
 .responsiveGallery-wrapper{
 	position: relative;
-	width:88%;
+	width:93%;
 	/* margin: 0 auto; */
 
 	padding-top: 25%;/*用padding撑开容器高度*/
@@ -88,8 +88,8 @@
 .responsivGallery-pic{
 	/* width: 100%;
 	height: auto; */
-	width: 550px;
-	height: 550px;
+	width: 450px;
+	height: 450px;
 }
 .w-responsivGallery-info{
 	width: 80%;
