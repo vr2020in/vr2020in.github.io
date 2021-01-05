@@ -891,7 +891,7 @@ h6 {
 }
 #who-we-are .vrtext {
 font-size: 85px;
-color: #ffc107;
+color: #ffffff;
 }
 #who-we-are h2 {
     color: #fff;
@@ -1447,6 +1447,10 @@ color: #ffc107;
 
 #contact {
     padding: 60px 0;
+}
+#contact p strong {
+    color: #8a3a6f;
+    font-size: 18px;
 }
 
 #contact .contact-info {
