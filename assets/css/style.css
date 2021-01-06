@@ -3,7 +3,7 @@
 body {
     background: #fff;
     color: #666666;
-    font-family:"Roboto", 'Open Sans', sans-serif;
+    font-family: "Roboto", 'Open Sans', sans-serif;
     font-size: 17px;
 }
 
@@ -486,8 +486,8 @@ h6 {
     margin-bottom: 30px;
     font-size: 22px;
     font-weight: 700;
-    margin-left:40% ;
-    width:100% ;
+    margin-left: 40%;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -584,6 +584,7 @@ h6 {
 # Sections
 --------------------------------------------------------------*/
 
+
 /* section {
     overflow: hidden;
 } */
@@ -629,9 +630,10 @@ h6 {
     /* padding-bottom: 30px; */
     color: #000000;
 }
-#specialisation p, h5 {
-    color: #000000;
 
+#specialisation p,
+h5 {
+    color: #000000;
 }
 
 
@@ -890,10 +892,12 @@ h6 {
     font-size: 34px;
     font-weight: 700;
 }
+
 #who-we-are .vrtext {
-font-size: 85px;
-color: #ffffff;
+    font-size: 85px;
+    color: #ffffff;
 }
+
 #who-we-are h2 {
     color: #fff;
     font-size: 46px;
@@ -1449,6 +1453,7 @@ color: #ffffff;
 #contact {
     padding: 60px 0;
 }
+
 #contact p strong {
     color: #8a3a6f;
     font-size: 18px;
@@ -1589,6 +1594,7 @@ color: #ffffff;
 #contact [type="button"]:hover {
     background: #6d2856;
 }
+
 #contact [type="button"] {
     background: #8a3a6f;
     border: 0;
@@ -1601,7 +1607,6 @@ color: #ffffff;
 #contact .php-email-form button[type="submit"]:hover {
     background: #6d2856;
 }
-
 
 @-webkit-keyframes animate-loading {
     0% {
@@ -1793,7 +1798,6 @@ color: #ffffff;
     #who-we-are .vrtext {
         font-size: 55px;
     }
-   
 }
 
 .services-tabs h5 {
@@ -1824,6 +1828,7 @@ color: #ffffff;
     -webkit-transform: scale(1.2);
     transform: scale(1.5);
 }
-.w-gallery{
-    margin-top:250px;
+
+.w-gallery {
+    margin-top: 250px;
 }
