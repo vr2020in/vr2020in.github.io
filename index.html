@@ -622,30 +622,17 @@
                 "contant": customerMessage ? customerMessage : ""
             });
 
-            let xhr = new XMLHttpRequest();
-            xhr.withCredentials = true;
-
-            xhr.addEventListener("readystatechange", function() {
-                if (this.readyState === 4) {
-                    console.log(this.responseText);
-                }
-            });
-
-            xhr.open("POST", "https://api-filesystem.vr2020dentlab.com/api/users/need_support");
-            xhr.setRequestHeader("Content-Type", "application/json");
-
-            xhr.send(data);
 
 
             var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
 
-var raw = JSON.stringify({"user_info":"anil@gmail.com ","contant":"Hello Need Support"});
+
 
 var requestOptions = {
   method: 'POST',
   headers: myHeaders,
-  body: raw,
+  body: data,
   redirect: 'follow'
 };
 
