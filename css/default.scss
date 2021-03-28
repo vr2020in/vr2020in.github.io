@@ -341,8 +341,10 @@ right: 0px!important;
         margin-bottom:30px; 
         .shape {
             @include flexbox-all-center;
+           
             span {
                 background:$grey-ee;
+                padding:20px ;
             @include flexbox-all-center;
 
             }
@@ -350,7 +352,7 @@ right: 0px!important;
         h1 {
             color: $black;
             font-size: 24px;
-            padding:20px ;
+            padding:30px ;
         }
     }
     .circle-vr {

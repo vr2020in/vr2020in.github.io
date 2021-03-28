@@ -441,6 +441,7 @@ a:hover {
 
 .designservice .box-service .shape span {
   background: #eeeeee;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,7 +456,7 @@ a:hover {
 .designservice .box-service h1 {
   color: #000000;
   font-size: 24px;
-  padding: 20px;
+  padding: 30px;
 }
 
 .designservice .circle-vr {
