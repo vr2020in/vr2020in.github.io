@@ -640,9 +640,7 @@ a:hover {
   position: relative;
 }
 
-.worldcontact .worldmap .map-animation, .worldcontact .worldmap .circle-pink1, .worldcontact .worldmap .circle-pink2, .worldcontact .worldmap .circle-pink3, .worldcontact .worldmap .circle-pink4, .worldcontact .worldmap .circle-pink5, .worldcontact .worldmap .circle-pink6, .worldcontact .worldmap .circle-pink7 {
-  width: 20px;
-  height: 20px;
+.worldcontact .worldmap .map-animation, .worldcontact .worldmap .circle-pink1, .worldcontact .worldmap .circle-pink2, .worldcontact .worldmap .circle-pink3, .worldcontact .worldmap .circle-pink4, .worldcontact .worldmap .circle-pink5, .worldcontact .worldmap .circle-pink6, .worldcontact .worldmap .circle-pink7, .worldcontact .worldmap .circle-pink8, .worldcontact .worldmap .circle-pink9, .worldcontact .worldmap .circle-pink10, .worldcontact .worldmap .circle-pink11, .worldcontact .worldmap .circle-pink12, .worldcontact .worldmap .circle-pink13, .worldcontact .worldmap .circle-pink14, .worldcontact .worldmap .circle-pink15, .worldcontact .worldmap .circle-pink16, .worldcontact .worldmap .circle-pink17, .worldcontact .worldmap .circle-pink18 {
   border-radius: 30px;
   background: #BD2693;
   -webkit-animation: circle-pink 1.5s alternate infinite ease-in;
@@ -655,6 +653,8 @@ a:hover {
 .worldcontact .worldmap .circle-pink1 {
   top: 15%;
   left: 60%;
+  width: 15PX;
+  height: 15PX;
 }
 
 @-webkit-keyframes circle-pink {
@@ -682,36 +682,120 @@ a:hover {
 .worldcontact .worldmap .circle-pink2 {
   top: 38%;
   left: 70%;
+  width: 15px;
+  height: 15px;
 }
 
 .worldcontact .worldmap .circle-pink3 {
   top: 38%;
   left: 50%;
+  width: 15PX;
+  height: 15PX;
 }
 
 .worldcontact .worldmap .circle-pink4 {
   top: 37%;
   left: 43%;
-}
-
-.worldcontact .worldmap .circle-pink4 {
-  top: 37%;
-  left: 21%;
+  width: 15px;
+  height: 15px;
 }
 
 .worldcontact .worldmap .circle-pink5 {
   top: 25%;
   left: 28%;
+  width: 15px;
+  height: 15px;
 }
 
 .worldcontact .worldmap .circle-pink6 {
   top: 37%;
   left: 43%;
+  width: 15px;
+  height: 15px;
 }
 
 .worldcontact .worldmap .circle-pink7 {
   top: 51%;
   left: 29%;
+  width: 15px;
+  height: 15px;
+}
+
+.worldcontact .worldmap .circle-pink8 {
+  top: 25%;
+  left: 23%;
+  width: 15px;
+  height: 15px;
+}
+
+.worldcontact .worldmap .circle-pink9 {
+  top: 31%;
+  left: 23%;
+  width: 15px;
+  height: 15px;
+}
+
+.worldcontact .worldmap .circle-pink10 {
+  top: 31%;
+  left: 21%;
+  width: 15px;
+  height: 15px;
+}
+
+.worldcontact .worldmap .circle-pink11 {
+  top: 28%;
+  left: 25%;
+  width: 15px;
+  height: 15px;
+}
+
+.worldcontact .worldmap .circle-pink12 {
+  top: 18%;
+  left: 23%;
+  width: 15px;
+  height: 15px;
+}
+
+.worldcontact .worldmap .circle-pink13 {
+  top: 28%;
+  left: 66%;
+  width: 15px;
+  height: 15px;
+}
+
+.worldcontact .worldmap .circle-pink14 {
+  top: 15%;
+  left: 48%;
+  width: 15px;
+  height: 15px;
+}
+
+.worldcontact .worldmap .circle-pink15 {
+  top: 18%;
+  left: 51%;
+  width: 15px;
+  height: 15px;
+}
+
+.worldcontact .worldmap .circle-pink16 {
+  top: 25%;
+  left: 51%;
+  width: 15px;
+  height: 15px;
+}
+
+.worldcontact .worldmap .circle-pink17 {
+  top: 20%;
+  left: 47%;
+  width: 15px;
+  height: 15px;
+}
+
+.worldcontact .worldmap .circle-pink18 {
+  top: 17%;
+  left: 45%;
+  width: 15px;
+  height: 15px;
 }
 
 .globalsupport h1 {
@@ -1216,6 +1300,9 @@ a:hover {
   }
   .aboutus {
     padding: 50px 20px 0 20px;
+  }
+  .count h3 {
+    font-size: 40px;
   }
   .count:after {
     border-right: 400px solid transparent;

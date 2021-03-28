@@ -35,11 +35,11 @@ setTimeout(function(){
     if(curval1<=10){
       $('#counter1').text(sdf_FTS((curval1+11),0,' '));
     }
-    if(curval2<=9998){
-      $('#counter2').text(curval2+2);
+    if(curval2<=0){
+      $('#counter2').text(curval2+2 + ',00,000' + '+');
     }
     if(curval3<=99){
-      $('#counter3').text(curval3+1);
+      $('#counter3').text(curval3+1 + '+');
     }
   }, 2);
   
