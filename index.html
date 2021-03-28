@@ -2,647 +2,1036 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>VR 2020 Dental Designing Solution & Digital Laboratory</title>
-    <meta name="keywords" content="VR 2020 | Digital Dentistry | Dental Module | Dentist  ">
+  <title>VR 2020 Dental Designing Solution & Digital Laboratory</title>
+  <meta name="keywords" content="VR 2020 | Digital Dentistry | Dental Module | Dentist  ">
     <meta name="description" content="We deals in all Dental Modules">
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="css/default.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <!-- <script type="text/javascript" src="js/camera.min.js"></script> -->
+  <script type="text/javascript" src="js/counterup.js"></script>
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <script src="js/main.js"></script>
 
-    <link href="assets/css/style.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
-    <link rel="stylesheet" type="text/css" href="assets/css/jquery-responsiveGallery.css">
+  
 
-    <script>
-        // Get the video
-        var video = document.getElementById("myVideo");
-
-        // Get the button
-        var btn = document.getElementById("myBtn");
-
-        // Pause and play the video, and change the button text
-        function myFunction() {
-            if (video.paused) {
-                video.play();
-                btn.innerHTML = "Pause";
-            } else {
-                video.pause();
-                btn.innerHTML = "Play";
-            }
-        }
-    </script>
+  <!-- <link rel='stylesheet' id='camera-css' href='css/header.css' type='text/css' media='all'> -->
+  <script>
+    jQuery(function () {
+      jQuery('#camera_wrap_1').camera({
+        transPeriod: 500,
+        time: 3000,
+        height: '490px',
+        thumbnails: false,
+        pagination: true,
+        playPause: false,
+        loader: false,
+        navigation: false,
+        hover: false
+      });
+    });
+  </script>
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "270" + 'px';
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
     <meta name="description" content="We deals in all Dental Modules  ">
 
 </head>
 
 <body>
 
-    <!-- ======= Header ======= -->
+<div class="container-fluid px-0" id="home">
+
+    <div class="container-fluid header-style">
+    <div class="row mx-0">
+        <div class="col-12 col-lg-6">
+            <a href="#" class="p-5 logo"><img src="/images/logo.png"></a>
+          </div>
+          <div class="col-12 col-lg-6 text-right mobile-menu">
+            <a href="mailto:info@vr2020dentlab.com" class="info">info@vr2020dentlab.com</a>
+            <a href="https://drive.vr2020dentlab.com/login" target="_blank" class="ourdrive">our drive</a>
+
+            <span class="menu-icon"  onclick="openNav()">&#9776;</span>
+          </div>
+    
+    </div>
+    </div> 
+
+  <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <!-- <a href="#home">Home page</a>
+        <a href="#aboutus">About us</a>
+        <a href="#designservice">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#vision">Vision</a>
+        <a href="#contactmap">Contact</a> -->
+        <nav class="nav-menu d-lg-block">
+            <ul>
+              <li class="active"> <a href="#home">Home page</a></li>
+              <li> <a href="#aboutus">About us</a></li>
+              <li> <a href="#designservice">Services</a></li>
+              <li>  <a href="portfolio.html" target="_blank">Portfolio</a></li>
+              <li> <a href="#globalsupport">Vision</a></li>
+              <li class="drop-down"> <a href="#contactmap">Contact</a>  </li>
+                  <li class="d-flex"><a href="https://www.facebook.com/vr2020dds/" target="_blank"><i class="fa fa-facebook rotate" aria-hidden="true"></i></a>
+                 <a href="https://twitter.com/vr2020dds" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="https://www.linkedin.com/in/vr-dental-designing-solution-3252471b1/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+            </ul>
+          </nav>
+      </div>
+    </div>
+    
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-2" data-slide-to="1"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="view">
+          <img class="d-block w-100" src="/images/slide1.png"
+            alt="First slide">
+          <div class="mask rgba-black-light"></div>
+        </div>
+        <div class="carousel-caption text-center">
+          <h1>Let's smile and rise <span>Together</span>
+            </h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+            </p>
+            <div class="line d-flex justify-content-center"><span></span></div>
+
+            <a href="#aboutus" class="readmore">Read More About Us</a>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="/images/slide2.png"
+            alt="Second slide">
+          <div class="mask rgba-black-strong"></div>
+        </div>
+        <div class="carousel-caption">
+          <h1>Digital Dentistry <span>Simplified</span></h1>
+          <p>We develop cutting-edge solutions that make digital dentistry easier for dentists and laboratories.
+            </p>
+            <div class="line d-flex justify-content-center"><span></span></div>
+
+            <a href="#" class="readmore">Read More About Us</a>
+        </div>
+      </div>
+     <div class="circle-vr mobile-vr">
+       <img src="/images/vricon.png">
+     </div>
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <!-- <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+    <!--/.Controls-->
+  </div>
+</div>
+  <!--/.Carousel Wrapper-->
 
 
+     
 
+  <div class="container-fluid px-0">
+   
+    
+    <section id="aboutus" class="aboutus text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 col-xs-12">
+            <h1>The all-in-one LABORATORY solution <br />
+              <span>for your dental business</span>
+            </h1>
+            <div class="line d-flex justify-content-center"><span></span></div>
+            <p>Mr. Ravi Kumar (Entrepreneur and Philanthropist) & Mr. Nikhil Mehta (Entrepreneur, CDT and GDC) founded
+              VR2020Dentlab in 2015, choose to explore the Digital Dentistry field across the world. Grounded in India,
+              having the best technicians from the worldwide. We want to provide the finest design, keeping in mind the
+              technological change in terms of invention and innovation. Our team of designers are well versed in the
+              current and updated Digital Dentistry procedure.
 
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top header-transparent">
-        <div class="container-fluid">
-
-            <div class="row justify-content-center">
-                <div class="col-xl-12 d-flex align-items-center">
-                    <div class="logo mr-auto">
-                        <a href="index.html"><img src="assets/img/VR2020dentlab.png"></a>
-                    </div>
-
-                    <nav class="nav-menu d-none d-lg-block">
-                        <ul>
-                            <li class="active"><a href="index.html">HOME</a></li>
-                            <li><a href="#about">ABOUT US</a></li>
-                            <li class="drop-down"><a href="#">SERVICES</a>
-                                <ul>
-                                    <li><a href="#services"> DESIGNING
-                                            SERVICES </a></li>
-                                    <li><a href="#specialisation">
-                                            SPECIALISATION </a></li>
-                                </ul>
-                            </li>
-                            <li><a href="portfolio.html">PORTFOLIO</a></li>
-                            <li><a href="#visionmission">VISION </a></li>
-
-                            <li class="drop-down"><a href="#">CONTACT</a>
-                                <ul>
-                                    <li><a href="#contact">CONTACT US </a></li>
-                                    <li> <a href="https://drive.vr2020dentlab.com/login" target="_blank">OUR DRIVE</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+            </p>
+            <p class="my-5"><strong>- Mr. Ravi Kumar</strong></p>
+            <p><i>We hold your best interest at heart in all that we do. Give us a call. We are excited to get to know
+                you.</i></p>
+            <div class="d-flex flex-direction-row justify-content-center flex-mobile my-5">
+              <a href="#designservice" class="design">
+                VIEW OUR DESIGN SERVICES
+              </a>
+              <a href="#contactmap" class="contact">
+                CONTACT US
+              </a>
             </div>
-
-        </div>
-    </header>
-    <!-- End Header -->
-
-
-
-    <!-- ======= Intro Section ======= -->
-    <section id="intro">
-        <!-- <div class="viewport-header"> -->
-
-
-        <div class="w-gallery">
-            <section id="responsiveGallery-container" class="responsiveGallery-container">
-                <a class="responsiveGallery-btn responsiveGallery-btn_prev" href="javascript:void(0);"></a>
-                <a class="responsiveGallery-btn responsiveGallery-btn_next" href="javascript:void(0);"></a>
-                <ul class="responsiveGallery-wrapper">
-                    <li class="responsiveGallery-item">
-                        <a href="#" class="responsivGallery-link"><img src="assets/img/header-slider/vr2020dentlab1.png" height="320" width="320" alt="" class="responsivGallery-pic"></a>
-
-                    </li>
-
-                    <li class="responsiveGallery-item">
-                        <a href="#" class="responsivGallery-link"><img src="assets/img/header-slider/vr2020dentlab2.png" height="320" width="320" alt="" class="responsivGallery-pic"></a>
-
-                    </li>
-
-                    <li class="responsiveGallery-item">
-                        <a href="#" class="responsivGallery-link"><img src="assets/img/header-slider/vr2020dentlab3.png" height="320" width="320" alt="" class="responsivGallery-pic"></a>
-
-                    </li>
-                    <li class="responsiveGallery-item">
-                        <a href="#" class="responsivGallery-link"><img src="assets/img/header-slider/vr2020dentlab4.png" height="320" width="320" alt="" class="responsivGallery-pic"></a>
-
-                    </li>
-                    <li class="responsiveGallery-item">
-                        <a href="#" class="responsivGallery-link"><img src="assets/img/header-slider/vr2020dentlab5.png" height="320" width="320" alt="" class="responsivGallery-pic"></a>
-
-                    </li>
-                    <li class="responsiveGallery-item">
-                        <a href="#" class="responsivGallery-link"><img src="assets/img/header-slider/vr2020dentlab6.png" height="320" width="320" alt="" class="responsivGallery-pic"></a>
-
-                    </li>
-                    <li class="responsiveGallery-item">
-                        <a href="#" class="responsivGallery-link"><img src="assets/img/header-slider/vr2020dentlab7.png" height="320" width="320" alt="" class="responsivGallery-pic"></a>
-
-                    </li>
-                    <li class="responsiveGallery-item">
-                        <a href="#" class="responsivGallery-link"><img src="assets/img/header-slider/vr2020dentlab8.png" height="320" width="320" alt="" class="responsivGallery-pic"></a>
-
-                    </li>
-
-                </ul>
-            </section>
+          </div>
         </div>
 
-        </div>
+      </div>
+
+
+
     </section>
-    <!-- End Intro Section -->
-
-    <main id="main">
-
-
-
-        <!-- ======= About Us Section ======= -->
-        <section id="about">
-            <div class="container mt-5" data-aos="fade-up">
-
-                <header class="section-header">
-                    <h3>ABOUT US</h3>
-                    <p id="services">Mr. Ravi Kumar (Entrepreneur and Philanthropist) &amp; Mr. Nikhil Mehta (Entrepreneur, CDT and GDC) founded VR2020Dentlab in 2015, choose to explore the Digital Dentistry field across the world. Grounded in India, having the best technicians
-                        from the worldwide. We want to provide the finest design, keeping in mind the technological change in terms of invention and innovation. Our team of designers are well versed in the current and updated Digital Dentistry procedure.
-
-                    </p>
-                </header>
-
-
+    <section id="count" class="count">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-lg-3 col-6 project">
+            <div class="d-flex justify-content-center">
+                <div class="shape-count"><img src="/images/customer.png"> </div>
             </div>
-        </section>
-        <!-- End About Us Section -->
+            <h4>Customer<br/>Satisfaction</h4>          
+            <h3 id="counter">0</h3>
+          </div>
+          <div class="col-md-3 col-lg-3 col-6 project">
+              <div class=" d-flex justify-content-center">
+
+              <div class="shape-count"><img src="/images/experiance.png"> </div>
+              </div>
+            <h4>Years of Total<br/>Experience</h4>        
+            <h3 id="counter1">0</h3>
+          </div>       
+          <div class="col-md-3 col-lg-3 col-6 project">
+              <div class=" d-flex justify-content-center">
+              <div class="shape-count"><img src="/images/implants.png"> </div>
+              </div>
+            <h4>Implants <br/>Designed</h4>
+            <h3 id="counter2">0</h3>
+                       
+          </div>
+          <div class="col-md-3 col-lg-3 col-6 project">
+
+              <div class=" d-flex justify-content-center">
+              <div class="shape-count"><img src="/images/teamstrength.png"></div>
+              </div>
+              <h4>VR Team<br/>Strength
+                  </h4>        
+              <h3 id="counter3">0</h3>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="specialsation" class="specialsation">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 col-xs-12  text-center">
+            <h1>Our
+              <span>Specialisation</span>
+            </h1>
+            <div class="line d-flex justify-content-center"><span></span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-3 col-xs-12 specialfour text-center hover-box">
+            <img src="/images/smile.png">
+            <h1>Smile Designing </h1>
+            <p>A smile expresses pleasure, sociability, happiness, joy, amusement, in a nutshell all the expressions
+              which makes us alive.
+              This concludes that it is a important attribute to any individual.
+            </p>
+          </div>
+          <div class="col-lg-3 col-sm-3 col-xs-12 specialfour text-center hover-box">
+            <img src="/images/digital.png">
+            <h1>Digital Denture</h1>
+            <p>A new high performance polymer, BioHPP, based on polyether-ether-ketone (PEEK) polymer was introduced as
+              dental
+              material for manufacturing the superstructure dentures on dental implants.
+            </p>
+          </div>
+          <div class="col-lg-3 col-sm-3 col-xs-12 specialfour text-center hover-box">
+            <img src="/images/valplast.png">
+            <h1>Valplast Flexible</h1>
+            <p>A new high performance polymer, BioHPP, based on polyether-ether-ketone (PEEK) polymer was introduced as
+              dental
+              material for manufacturing the superstructure dentures on dental implants.
+            </p>
+          </div>
+          <div class="col-lg-3 col-sm-3 col-xs-12 specialfour text-center hover-box">
+            <img src="/images/cosmetic.png">
+            <h1> Cosmetic Dentistry</h1>
+            <p>A couple of our designers are dedicated to this specialization of ours. It is a latest trend in
+              dentistry.
+              Dental veneers are wafer-thin, custom-made shells of tooth-colored porcelain or resin
+              that cover the front surface of the teeth.
+
+            </p>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+   
+  </div>
+  <section id="designservice" class="designservice">
+     
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-xs-12  text-center">
+          <h1>Design
+            <span>Services</span>
+          </h1>
+          <div class="line d-flex justify-content-center"><span></span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-sm-3 col-xs-12 hover-box">
+          <div class="box-service text-center ">
+            <div class="shape">
+              <span> <img src="/images/crown-bridge.png"></span>
+            </div>
+            <h1>Crown &
+              Bridges
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-3 col-xs-12 hover-box">
+          <div class="box-service text-center ">
+            <div class="shape">
+              <span> <img src="/images/screw-retain-crown.png"></span>
+            </div>
+            <h1>Screw-Retain
+              -Crown
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-3 col-xs-12 hover-box">
+          <div class="box-service text-center ">
+            <div class="shape">
+              <span> <img src="/images/cpd-rpd.png"></span>
+            </div>
+            <h1>CPD &
+              RPD
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-3 col-xs-12 hover-box">
+          <div class="box-service text-center ">
+            <div class="shape">
+              <span> <img src="/images/night-guard.png"></span>
+            </div>
+            <h1>NIGHT
+              GUARD
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-3 col-xs-12 hover-box">
+          <div class="box-service text-center ">
+            <div class="shape">
+              <span> <img src="/images/inlay.png"></span>
+            </div>
+            <h1>INLAY ONLAY
+
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-3 col-xs-12 hover-box">
+          <div class="box-service text-center ">
+            <div class="shape">
+              <span> <img src="/images/veneer.png"></span>
+            </div>
+            <h1>VENEER
+
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-3 col-xs-12 hover-box">
+          <div class="box-service text-center ">
+            <div class="shape">
+              <span> <img src="/images/snapsmile.png"></span>
+            </div>
+            <h1>SNAP ON SMILE
+
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-3 col-xs-12 hover-box">
+          <div class="box-service text-center ">
+            <div class="shape">
+              <span> <img src="/images/custom-tray.png"></span>
+            </div>
+            <h1>CUSTOM TRAY
+
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-3 col-xs-12 hover-box">
+          <div class="box-service text-center ">
+            <div class="shape">
+              <span> <img src="/images/digital-denture.png"></span>
+            </div>
+            <h1>DIGITAL DENTURE
+
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-3 col-xs-12 hover-box">
+          <div class="box-service text-center ">
+            <div class="shape">
+              <span> <img src="/images/model-create.png"></span>
+            </div>
+            <h1>MODEL CREATE
+
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-3 col-xs-12 hover-box">
+          <div class="box-service text-center ">
+            <div class="shape">
+              <span> <img src="/images/surgical-guide.png"></span>
+            </div>
+            <h1>SURGICAL GUIDE
+
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-3 col-xs-12 hover-box">
+          <div class="box-service text-center ">
+            <div class="shape">
+              <span> <img src="/images/flexible-denture.png"></span>
+            </div>
+            <h1>FLEXIBLE DENTURE
+
+            </h1>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="circle-vr">
+        <img src="/images/vricon.png">
+      </div>
+  </section>
+  <section id="workflow" class="workflow">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-xs-12  text-center">
+          <h1>Our
+            <span>Workflow</span>
+          </h1>
+          <div class="line d-flex justify-content-center"><span></span></div>
+        </div>
+      </div>
+      <div class="workflowlne">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzYzIiBoZWlnaHQ9IjkyIiB2aWV3Qm94PSIwIDAgNzYzIDkyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBvcGFjaXR5PSIwLjUiIGQ9Ik0wLjY2NzQ4IDQxLjkzNDZDMC42Njc0OCA0MS45MzQ2IDg5LjU2MDggLTQuNDgwODkgMTYyLjgxNyAxLjg2MDM4QzIzNi4wNzIgOC4yMDE2NiAzNzkuMTUgODAuMDcwNSA1MjMuMzczIDg5LjU4MjZDNjY3LjU5NSA5OS4wOTQ2IDc2MS45MDQgNDEuOTM0NiA3NjEuOTA0IDQxLjkzNDYiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS4yIiBzdHJva2UtZGFzaGFycmF5PSI2IDgiLz4KPC9zdmc+Cg==" />
+      </div>
+      <div class="row">
+       
+        <div class="col-lg-4 col-sm-4 col-xs-12">
+          <div class="workflow-box text-center ">
+            <div class="shapework">
+              <span> <img src="/images/scanning.png"></span>
+            </div>
+            <div class="step">Step 1</div>
+            <h1>SCANNING
+
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-xs-12">
+          <div class="workflow-box text-center ">
+            <div class="shapework">
+              <span> <img src="/images/designing.png"></span>
+            </div>
+            <div class="step">Step 2</div>
+            <h1>DESIGNING
+
+            </h1>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-xs-12">
+          <div class="workflow-box text-center ">
+            <div class="shapework">
+              <span> <img src="/images/millingcam.png"></span>
+            </div>
+            <div class="step">Step 3</div>
+            <h1>MILLING WITH CAM
+
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </section>
+  <section id="weare" class="weare">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-xs-12  text-center">
+          <h1>VR2020 DDs...
+            <span>We are 24*6 open</span>
+          </h1>
+          <div class="line d-flex justify-content-center"><span></span></div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="#" class="contactweare">
+          CONTACT US
+        </a>
+
+      </div>
+  </section>
+  <section id="worldcontact" class="worldcontact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-xs-12  text-center">
+          <div class="worldmap">
+          <div class="circle-pink1"></div>
+          <div class="circle-pink2"></div>
+          <div class="circle-pink3"></div>
+          <div class="circle-pink4"></div>
+          <div class="circle-pink5"></div>
+          <div class="circle-pink6"></div>
+          <div class="circle-pink7"></div>
+          <img src="/images/worldmap.png" class="img-responsive world-map">
+        </div>
+          <p>In order to accommodate every customer’s needs, VR2020Dentlab has created specialized design teams that
+            cater to certain design
+            preferences. Rather than going to a large group of designers, with VR2020Dentlab you will be assigned
+            to a specific team that will handle your cases
+            day in and day out. This is the FC Difference.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <section id="globalsupport" class="globalsupport">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-xs-12  text-center">
+          <h1>Global
+            <span>Support</span>
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-xs-12 text-center d-flex justify-content-center global-support">
+          <div class="support">
+            <img src="/images/french.png">
+            <h4>FRENCH</h4>
+          </div>
+          <div class="support">
+            <img src="/images/english.png">
+            <h4>ENGLISH</h4>
+          </div>
+          <div class="support">
+            <img src="/images/spanish.png">
+            <h4>SPANISH</h4>
+          </div>
+          <div class="support">
+            <img src="/images/german.png">
+            <h4>GERMAN</h4>
+          </div>
+          <div class="support">
+            <img src="/images/russion.png">
+            <h4>RUSSION</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="shape" class="shape">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-xs-12  text-center">
+          <h1>3 Shape
+            <span>Integration</span>
+          </h1>
+          <div class="line d-flex justify-content-center"><span></span></div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-4 col-md-4 col-xs-12">
+          <div class="shape-img">img</div>
+          <h3>Dental System</h3>
+          <p>Send to VR2020Dental button<br />
+            in Dental System 2019.3
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-4  col-xs-12">
+          <div class="shape-img">shape-img</div>
+          <h3>Dental Desktop</h3>
+          <p>Add VR2020Dental as<br /> a Communicate Lab (Clear<br /> Aligners Only)
+
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-4  col-xs-12">
+          <div class="shape-img">img</div>
+          <h3>Implant Studio™</h3>
+          <p>Send your case directly<br /> from TRIOS/Implant<br /> Studio
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section id="integration" class="integration">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-xs-12  text-center">
+          <h1>Manufacturing
+            <span>Integrations</span>
+          </h1>
+          <div class="line d-flex justify-content-center"><span></span></div>
+          <p>We are more than a design service provider. We are a neutral platform that allows our partners to 
+            send to any integrated manufacturer around the world. Whether you are looking to have a Clear
+            Aligner produced or a simple dental crown, we have you covered with our 3rd party integrations!
+          </p>
+        </div>
+      </div>
+      <div class="row int-area text-center">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int1.png">
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int2.png">
+
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int3.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int4.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int5.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int6.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int7.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int8.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int9.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int10.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int11.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int12.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int13.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int14.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int15.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int16.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int17.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int18.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int19.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int20.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int21.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int22.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int23.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int24.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int25.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int26.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int27.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int28.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int29.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int30.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int31.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int32.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int33.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int34.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int35.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int36.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int37.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int38.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int39.png">
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-6">
+          <img src="/images/int40.png">
+
+        </div>
 
 
 
+      </div>
+  </section>
 
+  <section id="contactmap" class="contactmap">
+          <iframe
+            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJscSfOxndDDkR8F2upxVkflA&key=AIzaSyA9rkj98geHonyWpu0H90XOsdihHnx5LTs"
+            width="100%" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe> </div>
 
-
-
-        <!-- ======= Services Section ======= -->
-        <section>
-            <div class="container">
-
-                <header class="section-header wow fadeInUp">
-                    <h3>SERVICES</h3>
-                    <!-- <h3>We are specialist in Smile Designing</h3> -->
-                    <p><strong>Precision & Quality</strong> is our Priority. </p>
-                </header>
-                <div class="container  services-tabs">
-
-                    <ul class="nav nav-pills d-flex justify-content-center">
-                        <li><a data-toggle="pill" href="#designingservices" class="active">DESIGNING SERVICES</a></li>
-                        <!-- <li><a data-toggle="pill" href="#specialisation">SPECIALISATION</a></li> -->
-                    </ul>
-                    <div class="row mt-5">
-                        <div class="tab-content">
-                            <div id="designingservices" class="tab-pane fade in active" style="opacity:1">
-                                <!-- <h5>DESIGNING SERVICES</h5> -->
-                                <div class="row">
-
-                                    <div class="col-lg-3 col-md-6">
-                                        <div class="member text-center" data-aos="fade-up" data-aos-delay="100">
-                                            <a href="#" title="">
-                                                <img src="assets/img/crownbridges.png" class="img-fluid" alt="">
-                                            </a>
-                                            <h6>Crown & Bridges</h6>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-6">
-                                        <div class="member text-center" data-aos="fade-up" data-aos-delay="200">
-                                            <a href="#">
-                                                <img src="assets/img/inlayonlay.png" class="img-fluid" alt="">
-                                            </a>
-                                            <h6>Inlay Onlay</h6>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-6">
-                                        <div class="member text-center" data-aos="fade-up" data-aos-delay="300">
-                                            <a href="#">
-                                                <img src="assets/img/screwretaincrown.png" class="img-fluid" alt="">
-                                            </a>
-                                            <h6>Screw-Retain-Crown</h6>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-6">
-                                        <div class="member text-center" data-aos="fade-up" data-aos-delay="400">
-                                            <a href="#">
-                                                <img src="assets/img/veneer.png" class="img-fluid" alt="">
-                                            </a>
-                                            <h6>Veneer</h6>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <div class="member text-center" data-aos="fade-up" data-aos-delay="100">
-                                            <a href="#">
-                                                <img src="assets/img/snaponsmile.png" class="img-fluid" alt="">
-                                            </a>
-                                            <h6>Snap On Smile</h6>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-6">
-                                        <div class="member text-center" data-aos="fade-up" data-aos-delay="200">
-                                            <a href="#">
-                                                <img src="assets/img/cpdrpd.png" class="img-fluid" alt="">
-                                            </a>
-                                            <h6>CPD & RPD</h6>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-6">
-                                        <div class="member text-center" data-aos="fade-up" data-aos-delay="300">
-                                            <a href="#">
-                                                <img src="assets/img/customtray.png" class="img-fluid" alt="">
-                                            </a>
-                                            <h6>Custom Tray</h6>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-6">
-                                        <div class="member text-center" data-aos="fade-up" data-aos-delay="400">
-                                            <a href="#">
-                                                <img src="assets/img/flexibledenture.png" class="img-fluid" alt="">
-                                            </a>
-                                            <h6>Flexible Denture</h6>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <div class="member text-center" data-aos="fade-up" data-aos-delay="100">
-                                            <a href="#">
-                                                <img src="assets/img/digitaldentureservice.png" class="img-fluid" alt="">
-                                            </a>
-                                            <h6>Digital Denture</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <div class="member text-center" data-aos="fade-up" data-aos-delay="200">
-                                            <a href="#">
-                                                <img src="assets/img/modelcreate.png" class="img-fluid" alt="">
-                                            </a>
-                                            <h6>Model Create</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                        <div class="member text-center" data-aos="fade-up" data-aos-delay="300">
-                                            <a href="#">
-                                                <img src="assets/img/nightguard.png" class="img-fluid" alt="">
-                                            </a>
-                                            <h6>Night Guard</h6>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-6" id="specialisation">
-                                        <div class="member text-center" data-aos="fade-up" data-aos-delay="400">
-                                            <a href="#">
-                                                <img src="assets/img/surgucalguide.png" class="img-fluid" alt="">
-                                            </a>
-                                            <h6 id="specialisation">Surgical Guide</h6>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
+  </section>
+  <section id="contactform" class="contactform">
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12  text-center">
+              <h1>Questions before
+                <span class="getting">getting started?</span>
+              </h1>
+              <div class="line d-flex justify-content-center"><span></span></div>
+            </div>
+          </div>
+          <div class="row my-5">
+              <div class="col-lg-6 col-sm-6 col-12">
+                <div class="contact-form-section">
+                  <!-- <form action="">
+                      <div class="form-group">
+                          <label for="name" class="label">Full Name:</label>
+                          <div class="inp-main">
+                          <input type="text" class="form-control" placeholder="Enter your name..." id="name">
+                            <span class="font"><i class="fa fa-user-o" aria-hidden="true"></i>
+                            </span>
                         </div>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-
-
-
-
-
-
-            </div>
-        </section>
-        <section>
-            <div class="container">
-
-                <header class="section-header wow fadeInUp">
-                    <h3> specialisation </h3>
-                </header>
-
-
-                <!-- <h5><strong>SPECIALISATION</strong></h5> -->
-                <p>One of the most important part that must be considered before any treatment is that the clinician must take the time to discuss and discover the patient’s chief complaint and concerns and whether he or she can achieve or succeed the patient’s
-                    desired final result.</p>
-                <p>Cherishing this, we have some of our strong point.</p>
-                <h5><strong>SMILE DESIGNING</strong></h5>
-                <p>A smile expresses pleasure, sociability, happiness, joy, amusement, in a nutshell all the expressions which makes us alive. This concludes that it is a important attribute to any individual. Keeping this in mind, we consider and evaluate
-                    in creating a smile that is esthetically pleasing to the doctor and the patient.</p>
-                <h5><strong>BIO HPP WITH COMPOSITE</strong></h5>
-                <p>A new high performance polymer, BioHPP, based on polyether-ether-ketone (PEEK) polymer was introduced as dental material for manufacturing the superstructure dentures on dental implants. It is the brand new material in the implantology
-                    sector. A division of our designers in VR2020 is dedicated to this segment as this is a potential future of digital dentistry.</p>
-                <h5><strong>COSMETIC DENTISTRY</strong></h5>
-                <p>A couple of our designers are dedicated to this specialization of ours. It is a latest trend in dentistry. Dental veneers are wafer-thin, custom-made shells of tooth-colored porcelain or resin that cover the front surface of the teeth.
-                </p>
-
-
-            </div>
-        </section>
-        <!-- End Services Section -->
-
-
-
-
-
-        <section class="container-fluid text-center mt-5">
-            <img src="assets/img/vr2020dentlab18.png" class="img-fluid" />
-
-        </section>
-
-        <!-- ======= Call To Action Section ======= -->
-        <section id="who-we-are">
-            <div class="container text-center" data-aos="zoom-in">
-
-
-                <!-- <h3>WHO WE ARE</h3> -->
-                <h2 id="visionmission"><strong class="vrtext">VR2020 DDs...</strong><br/>We are 24*6 open
-
-                </h2>
-
-
-
-            </div>
-        </section>
-        <!-- End Call To Action Section -->
-
-
-        <!-- ======= VISION, GOAL AND MISSION ======= -->
-        <section>
-            <div class="container mt-5" data-aos="fade-up">
-
-                <header class="section-header">
-                    <h3>VISION, GOAL AND MISSION </h3>
-                    <p>Our vision and mission is ‘let’s smile &amp; rise together’, wherein together do call for ‘us and our connects’. We believe on quality parameter while stepping up along by inspiring a healthier community.
-                    </p>
-                    <P>As our motto implied, we wish to be your companion in the ride to take things forward. We ,in VR2020 are familiar with the approach of our companion where their expectations are elevating with the pace of time and we aim to to accomplish
-                        the same with the finest quality along with equitable price. To meet all the requirements, we embrace all the verticals of Dental prosthesis and Designing.</P>
-                </header>
-                <div class="facts-img">
-                    <img src="assets/img/vr2020dentlab13.png" alt="" class="img-fluid">
-                </div>
-
-            </div>
-        </section>
-        <!-- End VISION, GOAL AND MISSION -->
-
-
-
-        <!-- ======= Contact Section ======= -->
-        <section id="contact" class="section-bg">
-
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-header">
-                    <h3>Contact</h3>
-                    <p><strong>We love to hear from you.</strong> </p>
-                </div>
-
-                <!-- <div class="row contact-info">
-
-          <div class="col-md-4">
-            <div class="contact-address">
-              <i class="ion-ios-location-outline"></i>
-              <h3>Addresses</h3>
-              <h6>Head Office</h6>
-              <address>Office No.12, 3rd Floor,
-                Krishna Palace, Ajronda Chowk,
-                Sector-20B, Faridabad-121001 (HR)</address><br/>
-                <h6>Branch Office</h6>
-                <address> Office No. R-12, Shivnarayan Market, Main Mohna Road, V.P.O - Chhainsa, Ballabgarh, Faridabad (HR)-121004
-              </address>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="contact-phone">
-              <i class="ion-ios-telephone-outline"></i>
-              <h3>Phone Number</h3>
-              <p><a href="tel:+91 9560232020">+91 9560232020</a></p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="contact-email">
-              <i class="ion-ios-email-outline"></i>
-              <h3>Email</h3>
-              <p><a href="mailto:info@vr2020dentlab.com">info@vr2020dentlab.com</a></p>
-            </div>
-          </div>
-
-        </div> -->
-
-                <div class="form">
-                    <form id="drive" class="php-email-form">
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <input type="text" name="name" class="form-control" id="customerName" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                <div class="validate"></div>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input type="text" name="tel" class="form-control" id="customerTel" placeholder="Phone No" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                <div class="validate"></div>
-                            </div>
-
-                            <div class="form-group col-md-6">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                <div class="validate"></div>
-                            </div>
                         </div>
-
                         <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" id="customerMessage" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                            <div class="validate"></div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div>
-                        <div class="text-center"><button type="button" onclick="sendMessage()" id="mailSent">Send
-                                Message</button>
-                        </div>
-                    </form>
+                            <label for="phone" class="label">Phone Number:</label>
+                            <div class="inp-main">
+                            <input type="number" class="form-control" placeholder="Enter your phone number..." id="number">
+                            <span class="font"><i class="fa fa-phone" aria-hidden="true"></i>
+                            </span>
+                            </div>
+                          </div>
+                    <div class="form-group">
+                      
+                      <label for="email" class="label">Email address:</label>
+                      <div class="inp-main">
+                      <input type="email" class="form-control" placeholder="Enter your email..." id="email">
+                      <span class="font"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                      </span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="lab" class="label">Lab Name:</label>
+                      <div class="inp-main">
+                      <input type="text" class="form-control" placeholder="Lab Name..." id="pwd">
+                      <span class="font"><i class="fa fa-flask" aria-hidden="true"></i>
+                      </span>
+                      </div>
+                      </div>
+                    <div class="form-group">
+                        <label for="lab" class="label">Service Request:</label>
+                        <div class="inp-main">
+                        <textarea row="3" type="text" class="form-control" placeholder="Add message..." id="pwd"> </textarea>
+                        </span>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Submit</button>
+                  </form> -->
+                      <form id="drive" class="php-email-form">
+                          <div class="form-row">
+                              <div class="form-group">
+                                <label for="name" class="label">Full Name:</label>
+                                  <div class="inp-main">
+                                  <input type="text" name="name" class="form-control" id="customerName" placeholder="Enter your name..." data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                  <span class="font"><i class="fa fa-user-o" aria-hidden="true"></i>
+                                  </div>
+                                  <div class="validate"></div>
+                              </div>
+                              <div class="form-group">
+                            <label for="phone" class="label">Phone Number:</label>
+                                  <div class="inp-main">
+                                  <input type="text" name="tel" class="form-control" id="customerTel" placeholder="Enter your phone number..." data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <span class="font"><i class="fa fa-phone" aria-hidden="true"></i>
+                                  </div>
+                                  <div class="validate"></div>
+
+                              </div>
+  
+                              
+                              <div class="form-group">
+                            <label for="email" class="label">Email address:</label>
+                                  <div class="inp-main">
+                                  <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email..." data-rule="email" data-msg="Please enter a valid email" />
+                      <span class="font"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                  </div>
+                                  <div class="validate"></div>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="lab" class="label">Lab Name:</label>
+                              <div class="inp-main">
+                              <input type="text" class="form-control" placeholder="Lab Name..." id="pwd">
+                              <span class="font"><i class="fa fa-flask" aria-hidden="true"></i>
+                              </span>
+                              </div>
+                              </div>
+                          <div class="form-group">
+                              <div class="inp-main">
+                              <textarea class="form-control" name="message" rows="5" id="customerMessage" data-rule="required" data-msg="Please write something for us" placeholder="Add message..."></textarea>
+                              <div class="validate"></div>
+                              </div>
+                          </div>
+                          <div class="mb-3">
+                              <div class="loading">Loading</div>
+                              <div class="error-message"></div>
+                              <div class="sent-message">Your message has been sent. Thank you!</div>
+                          </div>
+                          <button type="button" class="btn btn-submit" onclick="sendMessage()" id="mailSent">Send
+                                  Message</button>
+                         
+                      </form>
                 </div>
-
-            </div>
-        </section>
-
-        <div class="container-fluid">
-            <iframe width="100%" height="350" frameborder="0" tabindex="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJscSfOxndDDkR8F2upxVkflA&key=AIzaSyA9rkj98geHonyWpu0H90XOsdihHnx5LTs" allowfullscreen></iframe>
-
-        </div>
-        </div>
-        <!-- End Contact Section -->
-
-    </main>
-    <!-- End #main -->
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-        <div id="contact" class="footer-top">
-            <div class="container">
-                <div class="row" id="socialmedia">
-
-                    <div class="col-lg-3 col-md-3 footer-contact">
-                        <h4>ADDRESS</h4>
-                        <p>
-                            Head Office : Office No.12, 3rdFloor, Krishna Palace, Ajronda Chowk, Sector-20B, Faridabad-121001 (HR) <br>
-                        </p>
-                        <p>
-                            Branch Office : Office No. R-12, Shivnarayan Market, Main Mohna Road, V.P.O - Chhainsa, Ballabgarh, Faridabad(HR) 121004<br>
-                        </p>
-
-
-                    </div>
-                    <div class="col-lg-3 col-md-3 footer-contact">
-                        <h4>CONTACT</h4>
-                        <p>
-                            Phone No :<a style="color: #ffffff;" href="tel:+91 9560232020">&nbsp; +91 9560232020</a>
-                            <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:<a style="color: #ffffff;" href="tel:+91 9311532020">&nbsp; +91 9311532020</a>
-                            <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:<a style="color: #ffffff;" href="tel:+91129- 4009388">&nbsp; +91129- 4009388</a>
-                        </p>
-                        <p>
-                            Email : info@vr2020dentlab.com<br>
-                        </p>
-
-
-
-
-                    </div>
-
-
-                    <div class="col-lg-3 col-md-3 footer-newsletter">
-                        <h4>Information</h4>
-                        &copy; Copyright VR 2020. All rights reserved. All Rights Reserved | Designed by <a href="https://smatech.io/" target="_blank" style="color:#ffffff;">Smadhey
-                            Technology</a>
-                    </div>
-                    <div class="col-lg-3 col-md-3 footer-contact">
-                        <H4>SOCIAL MEDIA</H4>
-                        <div class="social-links">
-                            <!-- <span class="mr-2"> Social Media </span> -->
-                            <a href="https://www.facebook.com/vr2020dds/" class="facebook" target="_blank"><i
-                                    class="fa fa-facebook"></i></a>
-                            <a href="https://twitter.com/vr2020dds" class="facebook" target="_blank"><i
-                                    class="fa fa-twitter"></i></a>
-                            <!-- <a href="https://www.instagram.com/vr2020dental" class="facebook" target="_blank"><i
-              class="fa fa-instagram"></i></a> -->
-                            <a href="https://www.linkedin.com/in/vr-dental-designing-solution-3252471b1/" class="facebook" target="_blank"><i class="fa fa-linkedin"></i></a>
-
-                        </div>
-
-                    </div>
-
                 </div>
-            </div>
+                <div class="col-lg-6 col-sm-6 col-12 address-contact">
+                   <div class="row">
+                    <div class="col-1"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="col-11">
+                      <ul>
+                        <li><h4>Phone:</h4></li>
+                        <li>+91 9560232020</li>
+                        <li>+91 9311532020</li>
+                        <li>+91129- 4009388</li>
+                      </ul>
+                    </div>
+
+                   </div>
+                   <div class="row my-3">
+                      <div class="col-1"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                      <div class="col-11">
+                        <ul>
+                          <li><h4>Email:</h4></li>
+                          <li>info@vr2020dentlab.com</li>
+                        </ul>
+                      </div>
+  
+                     </div>
+                     <div class="row">
+                        <div class="col-1"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="col-11">
+                          <ul>
+                            <li><h4>Head Office:</h4></li>
+                            <li>Office No.12, 3rdFloor, Krishna Palace,<br/> Ajronda Chowk, Sector-20B,<br/> Faridabad-121001 (HR)
+                              </li>
+                          </ul>
+                        </div>
+    
+                       </div>
+                       <div class="row my-3">
+                          <div class="col-1"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                          <div class="col-11">
+                            <ul>
+                              <li><h4>Branch Office:</h4></li>
+                              <li>Office No. R-12, Shivnarayan Market, Main<br/> Mohna Road, V.P.O - Chhainsa, Ballabgarh,<br/> Faridabad(HR) 121004
+                                </li>
+                            </ul>
+                          </div>
+      
+                         </div>
+                         <div class="row my-3">
+                            <div class="col-1"></div>
+                            <div class="col-11">
+                              <ul class="social">
+                                <li><a href="https://www.facebook.com/vr2020dds/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                               <a href="https://twitter.com/vr2020dds" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/in/vr-dental-designing-solution-3252471b1/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+                              </ul>
+                            </div>
+        
+                           </div>
+                    </div>
+                </div>
+                <div class="row footer">
+                    <div class="col-lg-6 col-sm-6 col-12 d-flex align-items-center">
+                        <img src="/images/logowhite.png" class="mr-4">
+                        <p>© Copyright VR 2020. All rights reserved. All Rights<br/> Reserved | Designed by Smadhey Technology</p>
+
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6 col-12">
+                        <a href="#home">HOME</a>
+                        <a href="#aboutus">ABOUT US</a>             
+                        <a href="#designservice">SERVICES</a>             
+                        <a href="portfolio.html" target="_blank">PORTFOLIO</a>             
+                        <a href="#contactmap">CONTACT</a>
+             
+                       </div>
+                  </div>
         </div>
 
-    </footer>
-    <!-- End Footer -->
+          
 
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    <!-- Uncomment below i you want to use a preloader -->
-    <!-- <div id="preloader"></div> -->
-
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
-    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-    <script src="assets/vendor/counterup/counterup.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/venobox/venobox.min.js"></script>
-    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-
-
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.responsiveGallery.js"></script>
-
-    <script type="text/javascript">
-        $(function() {
-            $('.responsiveGallery-wrapper').responsiveGallery({
-                animatDuration: 400,
-                $btn_prev: $('.responsiveGallery-btn_prev'),
-                $btn_next: $('.responsiveGallery-btn_next')
-            });
-        });
-    </script>
-
-
-    <script>
-        function sendMessage() {
-            let customerMessage = document.getElementById('customerMessage').value;
-            customerMessage += 'Tel: ' + document.getElementById('customerTel').value;
-            customerMessage += 'Customer Name:' + document.getElementById('customerName').value;
-            customerMessage += 'Customer Email:' + document.getElementById('email').value;
-
-            //let url = "mailto:vr2020dental@gmail.com?";
-            // if(name){
-            // url += 	'subject='+ name +' enquiry !';
-            // }
-            // if(customerMessage){
-            // url += 	'&body='+ customerMessage +'!';
-            // }
-            document.getElementById('customerName').value = '';
-            document.getElementById('customerMessage').value = '';
-            document.getElementById('email').value = '';
-            document.getElementById('customerTel').value = "";
-
-
-            //window.open(url);
-            let data = JSON.stringify({
-                "user_info": name ? name : "",
-                "contant": customerMessage ? customerMessage : ""
-            });
+  </section>
 
 
 
-            var myHeaders = new Headers();
+
+
+
+  </div>
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <script>
+      function sendMessage() {
+          let customerMessage = document.getElementById('customerMessage').value;
+          customerMessage += 'Tel: ' + document.getElementById('customerTel').value;
+          customerMessage += 'Customer Name:' + document.getElementById('customerName').value;
+          customerMessage += 'Customer Email:' + document.getElementById('email').value;
+
+          //let url = "mailto:vr2020dental@gmail.com?";
+          // if(name){
+          // url += 	'subject='+ name +' enquiry !';
+          // }
+          // if(customerMessage){
+          // url += 	'&body='+ customerMessage +'!';
+          // }
+          document.getElementById('customerName').value = '';
+          document.getElementById('customerMessage').value = '';
+          document.getElementById('email').value = '';
+          document.getElementById('customerTel').value = "";
+
+
+          //window.open(url);
+          let data = JSON.stringify({
+              "user_info": name ? name : "",
+              "contant": customerMessage ? customerMessage : ""
+          });
+
+
+
+          var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
 
 
 
 var requestOptions = {
-  method: 'POST',
-  headers: myHeaders,
-  body: data,
-  redirect: 'follow'
+method: 'POST',
+headers: myHeaders,
+body: data,
+redirect: 'follow'
 };
 
 fetch("https://api-filesystem.vr2020dentlab.com/api/users/need_support", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
-        }
-    </script>
+.then(response => response.text())
+.then(result => console.log(result))
+.catch(error => console.log('error', error));
+      }
+  </script>
 
+
+<!-- Template Main JS File -->
 </body>
 
 </html>
