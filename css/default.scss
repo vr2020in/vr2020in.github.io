@@ -703,8 +703,10 @@ right: 0px!important;
         }
         img {
             transition: transform 250ms;
+            filter: grayscale(0);
             &:hover {
                 transform: translateY(-10px);
+                filter: grayscale(100);
             }
         }
     }
