@@ -308,6 +308,15 @@ a:hover {
   padding: 15px 30px;
   color: #ffffff !important;
   font-weight: bold;
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+}
+
+.header-style a.info:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .header-style .ourdrive {
@@ -318,6 +327,15 @@ a:hover {
   text-transform: uppercase;
   margin: 0 20px;
   font-weight: bold;
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+}
+
+.header-style .ourdrive:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .header-style .menu-icon {
@@ -405,7 +423,7 @@ a:hover {
 
 .designservice .box-service {
   background: #ffffff;
-  padding: 20px;
+  padding: 00;
   margin-bottom: 30px;
 }
 
@@ -423,9 +441,6 @@ a:hover {
 
 .designservice .box-service .shape span {
   background: #eeeeee;
-  border-radius: 100px;
-  width: 172px;
-  height: 172px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,7 +455,7 @@ a:hover {
 .designservice .box-service h1 {
   color: #000000;
   font-size: 24px;
-  margin: 20px 0;
+  padding: 20px;
 }
 
 .designservice .circle-vr {
@@ -1017,7 +1032,7 @@ a:hover {
 }
 
 .bg-port {
-  background: #ffffff;
+  background: repeating-linear-gradient(90deg, #f0f0f0 0, #f0f0f0 5%, transparent 0, transparent 50%) 0/15px 15px, repeating-linear-gradient(180deg, #f0f0f0 0, #f0f0f0 5%, transparent 0, transparent 50%) 0/15px 15px;
 }
 
 .bg-port .thumb .img-thumbnail {
