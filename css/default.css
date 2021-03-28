@@ -34,6 +34,18 @@ a:hover {
   margin: 30px 0;
 }
 
+.home .port-header {
+  background: url(/images/port.png) no-repeat top center;
+  padding: 250px 20px 100px 20px;
+}
+
+.home .port-header h1 {
+  font-size: 80px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+
 .carousel-caption {
   top: 30%;
 }
@@ -1004,6 +1016,30 @@ a:hover {
   font-size: 60px;
 }
 
+.bg-port {
+  background: #ffffff;
+}
+
+.bg-port .thumb .img-thumbnail {
+  border: 0;
+  padding: 0 0 25px 0;
+  background: none;
+  border-radius: 0;
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+}
+
+.bg-port .thumb .img-thumbnail:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.bg-port .thumb .img-thumbnail img {
+  border-radius: 0px;
+}
+
 @media screen and (max-height: 450px) {
   .overlay a {
     font-size: 20px;
@@ -1015,7 +1051,96 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .home .port-header {
+    background: url(/images/port.png) no-repeat top center;
+    padding: 250px 20px 20px 20px;
+  }
+  .home .port-header h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .world-map {
+    max-width: 100%;
+  }
+  .contact-form-section {
+    padding: 20px 30px !important;
+  }
+  .carousel-inner .circle-vr {
+    background: #ffffff;
+    -webkit-box-shadow: 0 0 5px #ccc;
+            box-shadow: 0 0 5px #ccc;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    position: absolute;
+    display: inline-block;
+    z-index: 999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    bottom: -15px;
+    left: 50%;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  .carousel-inner .circle-vr img {
+    border-radius: 30px;
+  }
+  .carousel-inner .line {
+    display: none !important;
+  }
+  a.contact, a.design {
+    width: 100% !important;
+    margin-top: 20px;
+    font-size: 18px !important;
+  }
+  .logo {
+    padding: 0;
+    text-align: center;
+  }
+  .count:after {
+    border-right: 768px solid transparent;
+  }
+  .carousel-inner:after {
+    border-right: 768px solid transparent;
+  }
+  .carousel-caption {
+    top: 25%;
+  }
+  .carousel-caption h1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .carousel-caption span {
+    font-size: 40px;
+    color: #0F93E2;
+    font-weight: bold;
+  }
+  .carousel-caption p {
+    font-size: 22px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
+  .home .port-header {
+    background: url(/images/port.png) no-repeat top center;
+    padding: 50px 20px 50px 20px;
+  }
+  .home .port-header h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+  }
   .workflowlne {
     display: none;
   }
@@ -1074,7 +1199,7 @@ a:hover {
     display: none !important;
   }
   .aboutus {
-    padding: 50px 20px;
+    padding: 50px 20px 0 20px;
   }
   .count:after {
     border-right: 400px solid transparent;
@@ -1109,6 +1234,9 @@ a:hover {
     width: 100% !important;
     margin-top: 20px;
     font-size: 20px !important;
+  }
+  .weare {
+    padding: 20px;
   }
   .weare a.contactweare {
     bottom: 15px;

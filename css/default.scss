@@ -29,6 +29,18 @@ a {
     margin:30px 0;
     }
 }
+.home {
+    .port-header {
+        background: url(/images/port.png) no-repeat top center;
+        padding:250px 20px 100px 20px;
+        h1 {
+            font-size:80px; 
+            text-align: center;
+            color: $white; 
+            font-weight: bold;
+        }
+    }
+}
 .carousel-caption {
     top:30%; 
     h1 {
@@ -790,6 +802,26 @@ right: 0px!important;
     font-size: 60px;
   }
   
+  .bg-port {
+      background: $white;
+      .thumb {
+        .img-thumbnail {
+            border: 0;
+            padding: 0 0 25px 0;
+            background: none;
+            border-radius: 0;
+            transition: transform 250ms;
+            &:hover {
+                transform: translateY(-10px);
+            }
+
+            img {
+                border-radius: 0px;
+              
+            }
+        }
+      }
+  }
   @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
@@ -798,91 +830,199 @@ right: 0px!important;
     right: 35px;
     }
   }
-  @media only screen and (max-width: 600px) {
-      .workflowlne {
-          display: none;
-      }
-      .overlay-content {
-          padding:0 20px ;
-      }
-      .overlay {
-          width:180px;
-          a {
-              font-size: 14px;
+ 
+
+ 
+
+@media only screen and (max-width:768px) {
+    .home {
+        .port-header {
+            background: url(/images/port.png) no-repeat top center;
+            padding:250px 20px 20px 20px;
+            h1 {
+                font-size:40px; 
+                text-align: center;
+                color: $white; 
+                font-weight: bold;
+            }
+        }
+    }
+    .world-map {
+        max-width:100% ;
+    }
+    // .weare {
+    //     a.contactweare {
+    //         border: 2px solid $pink;
+    //         background: $pink;
+    //         color: $white;
+    //         height:74px ;
+    //        @include flexbox-all-center-inline;
+    //        font-size:23px; 
+    //        font-weight: bold;
+    //        transition: transform 250ms; 
+    //        position: relative;
+    //        bottom: -30px;
+    //        padding:0 60px ;
+    //        &:hover {
+    //         transform: translateY(-10px);
+    
+    //        }
+    // }
+ .contact-form-section {
+     padding:20px 30px!important;
+ }
+    .carousel-inner{
+       
+        .circle-vr {
+            background: $white;
+            box-shadow: 0 0 5px #ccc;
+            width:80px ;
+            height:80px ;
+            border-radius: 100px;
+            position: absolute;
+            display: inline-block;
+            z-index: 999;
+          @include flexbox-all-center;
+          bottom:-15px;
+          left:50%; 
+          transform: translateX(-50px); 
+          img {
+              border-radius:30px; 
           }
-      }
-      .mobile-menu {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          a {
-              text-align: center;
-          }
-          .menu-icon {
-              text-align: center;
-              padding-right: 0;
-          }
-          a.ourdrive {
-              margin:20px 0; 
-          }
-      }
-    .header-style {
-        position: relative;
-        background: #160828;
-        padding-top:20px ;
+        }
+        .line {
+            display: none!important;
+        }
+    }
+    a.contact, a.design {
+        width:100%!important;
+        margin-top:20px ;
+        font-size: 18px!important;
+    }
+    .logo {
+        padding: 0;
+        text-align: center;
+    }
+    .count:after {
+        border-right:768px solid transparent;
+    }
+    .carousel-inner:after {
+        border-right:768px solid transparent;
     }
     .carousel-caption {
         top:25%; 
         h1 {
-            font-size: 20px;
+            font-size: 40px;
             font-weight: bold;
         }
        span {
-            font-size:20px;
+            font-size:40px;
             color: $blue;
             font-weight: bold;
         }
         p{
-            font-size:16px;
+            font-size:22px;
         }
        
     }
-      .mobile-vr {
-          display: none!important;
-      }
-    .aboutus {
-        padding: 50px 20px;
+ }
+ @media only screen and (max-width: 600px) {
+    .home {
+        .port-header {
+            background: url(/images/port.png) no-repeat top center;
+            padding:50px 20px 50px 20px;
+            h1 {
+                font-size:40px; 
+                text-align: center;
+                color: $white; 
+                font-weight: bold;
+            }
+        }
     }
-    .count:after {
-        border-right:400px solid transparent;
+    .workflowlne {
+        display: none;
     }
-    .contact-form-section {
-        padding:30px 30px 100px 30px!important;
+    .overlay-content {
+        padding:0 20px ;
     }
-      .global-support {
-          flex-direction: row;
-          flex-wrap: wrap;
-      }
-      .support {
-          width:50%; 
-      }
-.world-map {
-    max-width:100% ;
-}
-    .flex-mobile {
+    .overlay {
+        width:180px;
+        a {
+            font-size: 14px;
+        }
+    }
+    .mobile-menu {
         display: flex;
         flex-direction: column;
-  }
-  a.contact, a.design {
-      width:100%!important;
-      margin-top:20px ;
-      font-size: 20px!important;
-  }
-  .weare {
-    a.contactweare {
-        bottom: 15px;
-
+        justify-content: center;
+        a {
+            text-align: center;
+        }
+        .menu-icon {
+            text-align: center;
+            padding-right: 0;
+        }
+        a.ourdrive {
+            margin:20px 0; 
+        }
     }
+  .header-style {
+      position: relative;
+      background: #160828;
+      padding-top:20px ;
+  }
+  .carousel-caption {
+      top:25%; 
+      h1 {
+          font-size: 20px;
+          font-weight: bold;
+      }
+     span {
+          font-size:20px;
+          color: $blue;
+          font-weight: bold;
+      }
+      p{
+          font-size:16px;
+      }
+     
+  }
+    .mobile-vr {
+        display: none!important;
+    }
+  .aboutus {
+      padding: 50px 20px 0 20px;
+  }
+  .count:after {
+      border-right:400px solid transparent;
+  }
+  .contact-form-section {
+      padding:30px 30px 100px 30px!important;
+  }
+    .global-support {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .support {
+        width:50%; 
+    }
+.world-map {
+  max-width:100% ;
+}
+  .flex-mobile {
+      display: flex;
+      flex-direction: column;
+}
+a.contact, a.design {
+    width:100%!important;
+    margin-top:20px ;
+    font-size: 20px!important;
+}
+.weare {
+    padding:20px ;
+  a.contactweare {
+      bottom: 15px;
+
   }
 }
- 
+}
