@@ -438,7 +438,7 @@ right: 0px!important;
     background: url(/images/weare.png) no-repeat top center;
     padding: 100px 20px;
     h1 {
-        font-size: 45px;
+        font-size:80px;
         font-weight: bold;
         color: $white;
     }
@@ -453,16 +453,20 @@ right: 0px!important;
         color: $white;
         height:74px ;
        @include flexbox-all-center-inline;
-       font-size:23px; 
+       font-size:30px; 
        font-weight: bold;
        transition: transform 250ms; 
        position: relative;
-       bottom: -100px;
+       bottom: -25px;
        padding:0 60px ;
        &:hover {
         transform: translateY(-10px);
 
        }
+}
+.wearenumber {
+    background: $pink;
+    color: $white;
 }
 }
 .worldcontact {
@@ -1115,9 +1119,22 @@ a.contact, a.design {
     font-size: 20px!important;
 }
 .weare {
-    padding:20px ;
+    padding:50px 20px;
+    h1 {
+        font-size:40px;
+        font-weight: bold;
+        color: $white;
+    }
+   span {
+        font-size: 35px;
+        color: $blue;
+        font-weight: bold;
+        margin-bottom:30px ;
+    }
   a.contactweare {
-      bottom: 15px;
+      bottom: -10px;
+      font-size: 25px;
+      padding:0 30px ;
 
   }
 }

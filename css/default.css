@@ -583,7 +583,7 @@ a:hover {
 }
 
 .weare h1 {
-  font-size: 45px;
+  font-size: 80px;
   font-weight: bold;
   color: #ffffff;
 }
@@ -608,20 +608,25 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 23px;
+  font-size: 30px;
   font-weight: bold;
   -webkit-transition: -webkit-transform 250ms;
   transition: -webkit-transform 250ms;
   transition: transform 250ms;
   transition: transform 250ms, -webkit-transform 250ms;
   position: relative;
-  bottom: -100px;
+  bottom: -25px;
   padding: 0 60px;
 }
 
 .weare a.contactweare:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
+}
+
+.weare .wearenumber {
+  background: #BD2693;
+  color: #ffffff;
 }
 
 .worldcontact {
@@ -1339,10 +1344,23 @@ a:hover {
     font-size: 20px !important;
   }
   .weare {
-    padding: 20px;
+    padding: 50px 20px;
+  }
+  .weare h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .weare span {
+    font-size: 35px;
+    color: #0F93E2;
+    font-weight: bold;
+    margin-bottom: 30px;
   }
   .weare a.contactweare {
-    bottom: 15px;
+    bottom: -10px;
+    font-size: 25px;
+    padding: 0 30px;
   }
 }
 /*# sourceMappingURL=default.css.map */
