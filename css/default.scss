@@ -24,7 +24,7 @@ a {
 }
 .line {
     span {
-    height:100px ;
+    height:80px ;
     width:2px ;
     background: $blue;
     margin:30px 0;
@@ -43,7 +43,7 @@ a {
     }
 }
 .carousel-caption {
-    top:30%; 
+    top:22%; 
     h1 {
         font-size: 80px;
         font-weight: bold;
@@ -660,7 +660,7 @@ right: 0px!important;
         font-weight: bold;
     }
     .shape-img {
-        background:$grey-f3;
+        // background:$grey-f3;
         padding:20px ;
         min-width:240px;
         display: inline-block;
@@ -708,6 +708,19 @@ right: 0px!important;
                 transform: translateY(-10px);
                 filter: grayscale(100);
             }
+        }
+        .int-sepration {
+            [class*="col"] {
+                border-bottom: 1px solid #ccc;
+                border-left: 1px solid #ccc;
+             
+                &:first-child {
+                    border-left:0px; 
+                }
+            }         
+        }
+        .border-bottom-zero {
+            border-bottom: 0;
         }
     }
 }
@@ -1026,6 +1039,18 @@ right: 0px!important;
     }
  }
  @media only screen and (max-width: 600px) {
+    .int-sepration {
+        padding:20px 20px 0 20px ;
+        [class*="col"] {
+            border:none!important;
+            margin: 0 0 10px 0;
+            &:first-child {
+            border:none!important;
+            }
+           
+        }         
+    }
+  
     .home {
         .port-header {
             background: url(/images/port.png) no-repeat top center;

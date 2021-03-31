@@ -28,7 +28,7 @@ a:hover {
 }
 
 .line span {
-  height: 100px;
+  height: 80px;
   width: 2px;
   background: #0F93E2;
   margin: 30px 0;
@@ -47,7 +47,7 @@ a:hover {
 }
 
 .carousel-caption {
-  top: 30%;
+  top: 22%;
 }
 
 .carousel-caption h1 {
@@ -846,7 +846,6 @@ a:hover {
 }
 
 .shape .shape-img {
-  background: #f3f3f3;
   padding: 20px;
   min-width: 240px;
   display: inline-block;
@@ -908,6 +907,19 @@ a:hover {
           transform: translateY(-10px);
   -webkit-filter: grayscale(100);
           filter: grayscale(100);
+}
+
+.integration .int-area .int-sepration [class*="col"] {
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+.integration .int-area .int-sepration [class*="col"]:first-child {
+  border-left: 0px;
+}
+
+.integration .int-area .border-bottom-zero {
+  border-bottom: 0;
 }
 
 .contactform {
@@ -1240,6 +1252,16 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  .int-sepration {
+    padding: 20px 20px 0 20px;
+  }
+  .int-sepration [class*="col"] {
+    border: none !important;
+    margin: 0 0 10px 0;
+  }
+  .int-sepration [class*="col"]:first-child {
+    border: none !important;
+  }
   .home .port-header {
     background: url(/images/port.png) no-repeat top center;
     padding: 50px 20px 50px 20px;
