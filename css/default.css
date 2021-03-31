@@ -912,9 +912,35 @@ a:hover {
 .integration .int-area .int-sepration [class*="col"] {
   border-bottom: 1px solid #ccc;
   border-left: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .integration .int-area .int-sepration [class*="col"]:first-child {
+  border-left: 0px;
+}
+
+.integration .int-area .int-sepration-last [class*="col"] {
+  border-left: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.integration .int-area .int-sepration-last [class*="col"]:first-child {
   border-left: 0px;
 }
 
@@ -1286,6 +1312,34 @@ a:hover {
   }
   .int-sepration [class*="col"]:first-child {
     border: none !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .int-sepration-last {
+    padding: 20px 20px 0 20px;
+  }
+  .int-sepration-last [class*="col"] {
+    border: none !important;
+    margin: 0 0 10px 0;
+  }
+  .int-sepration-last [class*="col"]:first-child {
+    border: none !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .home .port-header {
     background: url(/images/port.png) no-repeat top center;

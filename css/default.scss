@@ -713,6 +713,18 @@ right: 0px!important;
             [class*="col"] {
                 border-bottom: 1px solid #ccc;
                 border-left: 1px solid #ccc;
+                @include flexbox-all-center;
+
+             
+                &:first-child {
+                    border-left:0px; 
+                }
+            }         
+        }
+        .int-sepration-last {
+            [class*="col"] {
+                border-left: 1px solid #ccc;
+                @include flexbox-all-center;
              
                 &:first-child {
                     border-left:0px; 
@@ -1072,6 +1084,21 @@ right: 0px!important;
             margin: 0 0 10px 0;
             &:first-child {
             border:none!important;
+                @include flexbox-all-center;
+            }
+           
+        }         
+    }
+    .int-sepration-last {
+        padding:20px 20px 0 20px ;
+
+        [class*="col"] {
+            border:none!important;
+            margin: 0 0 10px 0;
+            &:first-child {
+            border:none!important;
+            @include flexbox-all-center;
+
             }
            
         }         
