@@ -1363,6 +1363,9 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+  .shapework span {
+    height: 250px !important;
+  }
   .int-sepration-last {
     padding: 20px 20px 0 20px;
   }
@@ -1432,7 +1435,7 @@ a:hover {
     padding-top: 20px;
   }
   .carousel-caption {
-    top: 25%;
+    top: 0%;
   }
   .carousel-caption h1 {
     font-size: 20px;
@@ -1506,7 +1509,7 @@ a:hover {
   .weare a.contactweare {
     bottom: -10px;
     font-size: 25px;
-    padding: 0 30px;
+    padding: 0 15px;
   }
 }
 /*# sourceMappingURL=default.css.map */
