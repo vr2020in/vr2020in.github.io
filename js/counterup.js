@@ -1,47 +1,98 @@
-$(document).ready(function(){
-		
-		
-				
-  function sdf_FTS(_number,_decimal,_separator)
-  {
-  var decimal=(typeof(_decimal)!='undefined')?_decimal:2;
-  var separator=(typeof(_separator)!='undefined')?_separator:'';
-  var r=parseFloat(_number)
-  var exp10=Math.pow(10,decimal);
-  r=Math.round(r*exp10)/exp10;
-  rr=Number(r).toFixed(decimal).toString().split('.');
-  b=rr[0].replace(/(\d{1,3}(?=(\d{3})+(?:\.\d|\b)))/g,"\$1"+separator);
-  r=(rr[1]?b+'.'+rr[1]:b);
+$(function () {
 
-  return r;
-}
+  // ! Counter (used for Social Proof)
+
+  /* Usage example
+      <div id="counters_1">
+          <div ="counter" data-TargetNum="10" data-Speed="6000"></div>
+          <div class="counter" data-TargetNum="7" data-Speed="7000" 
+          data-Direction="reverse" data-Easing="linear"></div>
+          <div class="counter" data-TargetNum="80333" data-Speed="2500">0</div>
+      </div>
+      <div id="counters_2">
+          <div class="counter" data-TargetNum="4200" data-Speed="1000">0</div>
+          <div class="counter" data-TargetNum="4500" data-Speed="4000">0</div>
+          <div class="counter" data-TargetNum="4743">0</div>
+      </div>
+      <div id="counters_3">
+          <div class="counter" data-TargetNum="5200" data-Speed="1000">0</div>
+          <div class="counter" data-TargetNum="5500" data-Speed="4000">0</div>
+          <div class="counter" data-TargetNum="5743">0</div>
+      </div>
   
-setTimeout(function(){
-  $('#counter').text('0');
-  $('#counter1').text('0');
-  $('#counter2').text('0');
-  $('#counter3').text('0');
+     Required attr: data-TargetNum
+     Optionals attr: data-Speed(milisecons), data-Direction(reverse), data-Easing(linear, swing)
 
-  setInterval(function(){
-    
-    var curval=parseInt($('#counter').text());
-    var curval1=parseInt($('#counter1').text().replace(' ',''));
-    var curval2=parseInt($('#counter2').text());
-    var curval3=parseInt($('#counter3').text());
+     **CONFIG**
+     Please set a the ID's to watch, a class for all counters and a default speed
 
-    if(curval<=99){
-      $('#counter').text(curval+1 + '%');
-    }
-    if(curval1<=10){
-      $('#counter1').text(sdf_FTS((curval1+11),0,' '));
-    }
-    if(curval2<=0){
-      $('#counter2').text(curval2+2 + ',00,000' + '+');
-    }
-    if(curval3<=99){
-      $('#counter3').text(curval3+1 + '+');
-    }
-  }, 2);
-  
-}, 500);
-});
+     Avoid to use this script in pages where it isn't needed
+  */
+
+  // CONFIG
+  let visibilityIds = ['#counters_1', '#counters_2', '#counters_3', '#counters_hero']; //must be an array, could have only one element
+  let counterClass = '.counter';
+  let defaultSpeed = 4000; //default value
+
+  // END CONFIG
+
+  //init if it becomes visible by scrolling
+  $(window).on('scroll', function () {
+      getVisibilityStatus();
+  });
+
+  //init if it's visible by page loading
+  getVisibilityStatus();
+
+  function getVisibilityStatus() {
+      elValFromTop = [];
+      var windowHeight = $(window).height(),
+          windowScrollValFromTop = $(this).scrollTop();
+
+      visibilityIds.forEach(function (item, index) { //Call each class
+          try { //avoid error if class not exist
+              elValFromTop[index] = Math.ceil($(item).offset().top);
+          } catch (err) {
+              return;
+          }
+          // if the sum of the window height and scroll distance from the top is greater than the target element's distance from the top, 
+          //it should be in view and the event should fire, otherwise reverse any previously applied methods
+          if ((windowHeight + windowScrollValFromTop) > elValFromTop[index]) {
+              counter_init(item);
+          }
+      });
+  }
+
+  function counter_init(groupId) {
+      let num, speed, direction, index = 0;
+      $(counterClass).each(function () {
+          num = $(this).attr('data-TargetNum');
+          speed = $(this).attr('data-Speed');
+          direction = $(this).attr('data-Direction');
+          easing = $(this).attr('data-Easing');
+          if (speed == undefined) speed = defaultSpeed;
+          $(this).addClass('c_' + index); //add a class to recognize each counter
+          doCount(num, index, speed, groupId, direction, easing);
+          index++;
+      });
+  }
+
+  function doCount(num, index, speed, groupClass, direction, easing) {
+      let className = groupClass + ' ' + counterClass + '.' + 'c_' + index;
+      if(easing == undefined) easing = "swing";
+      $(className).animate({
+          num
+      }, {
+          duration: +speed,
+          easing: easing,
+          step: function (now) {
+              if (direction == 'reverse') {
+                  $(this).text(num - Math.floor(now));
+              } else {
+                  $(this).text(Math.floor(now));
+              }
+          },
+          complete: doCount
+      });
+  }
+})

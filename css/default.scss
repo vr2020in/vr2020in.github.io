@@ -284,6 +284,7 @@ right: 0px!important;
       padding:100px 0 ;
       text-align: center;
       margin:50px 0 50px 0;
+     
   .shape-count {
     width:136px;
     height:136px ;
@@ -297,7 +298,15 @@ right: 0px!important;
   h3 {
       font-size:60px; 
       color: $white;
+     
   }
+  .sub {
+    color: #ffffff;
+    font-size:60px; 
+    line-height: 65px;
+    padding: 0 10px;;
+
+}
   h4 {
     font-size:18px; 
     color: $white;
@@ -633,6 +642,7 @@ right: 0px!important;
       }
     }
 }
+
 .vision {
         padding:50px 0 ;
         h1 {

@@ -385,6 +385,13 @@ a:hover {
   color: #ffffff;
 }
 
+.count .sub {
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 65px;
+  padding: 0 10px;
+}
+
 .count h4 {
   font-size: 18px;
   color: #ffffff;
