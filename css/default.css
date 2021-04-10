@@ -633,6 +633,17 @@ a:hover {
   padding: 50px 0;
 }
 
+.worldcontact h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.worldcontact span {
+  font-size: 55px;
+  color: #0F93E2;
+  font-weight: bold;
+}
+
 .worldcontact p {
   font-weight: 600;
   line-height: 24px;
@@ -801,6 +812,29 @@ a:hover {
   left: 45%;
   width: 15px;
   height: 15px;
+}
+
+.vision {
+  padding: 50px 0;
+}
+
+.vision h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.vision span {
+  font-size: 55px;
+  color: #0F93E2;
+  font-weight: bold;
+}
+
+.vision p {
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 18px;
+  color: #000000;
+  padding: 20px 0;
 }
 
 .globalsupport h1 {

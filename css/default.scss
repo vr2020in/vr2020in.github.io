@@ -471,6 +471,15 @@ right: 0px!important;
 }
 .worldcontact {
     padding:50px 0 ;
+    h1 {
+        font-size: 45px;
+        font-weight: bold;
+    }
+   span {
+        font-size: 55px;
+        color: $blue;
+        font-weight: bold;
+    }
     p {
         font-weight:600;
         line-height:24px;
@@ -623,6 +632,25 @@ right: 0px!important;
         height: 15px;
       }
     }
+}
+.vision {
+        padding:50px 0 ;
+        h1 {
+            font-size: 45px;
+            font-weight: bold;
+        }
+       span {
+            font-size: 55px;
+            color: $blue;
+            font-weight: bold;
+        }
+        p {
+            font-weight:600;
+            line-height:24px;
+            font-size:18px;
+            color:$black;  
+            padding:20px 0 ;
+        }
 }
 .globalsupport {
     h1 {
